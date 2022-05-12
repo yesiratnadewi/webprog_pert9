@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 04</title>
+</head>
+<body>
+    
+    Belajar bahasa JavaScript di kelas Webprogramming <span id="kls">[Tulis Disini]</span>.
+
+    <br>NAMA<br>
+    <input type="text" id="txNAMA">
+    <br>
+    <button onclick="kelas()">Test</button>
+
+    <hr>
+
+    NIM<input type="text" id="txNIM">
+    <button onclick="checkNIM()">Check NIM</button>
+
+    <div id="hasil"></div>
+
+    <script>
+        function kelas(){
+            document.getElementById("kls").innerHTML="Kelas B"
+            document.getElementById("txNAMA").value = "Yesi"
+        }
+        function checkNIM(){
+            let hsl = document.getElementById("txNIM").value
+            console.log("isi dari hsl: "+hsl)
+            document.getElementById(hasil).innerHTML="Hasil Pembacaan dari isi textboox NIM adalah"+hsl  
+        }
+    </script>
+    
+</body>
+</html>

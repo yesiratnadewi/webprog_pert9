@@ -1,0 +1,1 @@
+document.write("<br>Menggunakan File Terpisah (external)")
